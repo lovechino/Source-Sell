@@ -20,7 +20,7 @@ const CarouselComponent = () => {
   const stack2 = useGetSingleProduct(2);
   const stack3 = useGetSingleProduct(3);
   return (
-    <div cclassName="mt-20 pt-16 pb-16 bg-[#fcf6fa]">
+    <div id="slide" className="mt-20 pt-16 pb-16 bg-[#fcf6fa]">
      <div className=" mt-20 w-[90%] md:w-[80%] mx-auto">
      <Slider {...settings}>
      <Card key={stack1?.id} title={stack1?.title} image={stack1?.image} rate={stack1?.rating.rate}/>

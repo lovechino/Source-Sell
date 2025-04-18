@@ -2,7 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className=' bg-white py-10'>
+   <div id='contact'>
+     <div className=' bg-white py-10'>
         <div className=' w-[90%] mx-auto px-4 sm:px-6 lg:px-8'>
             <div className=' grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8'>
            <div>
@@ -44,6 +45,7 @@ const Footer = () => {
          </div> 
         </div>
     </div>
+   </div>
   )
 }
 

@@ -28,7 +28,7 @@ const Navbar = ({openNav})=>{
                 <div className=" hidden lg:flex items-center space-x-10">
                     {
                         navLinks.map((item)=>(
-                            <div key={item.id}>{item.label}</div>
+                            <a key={item.id} href= {item.url}>{item.label}</a>
                         ))
                     }
                 </div>

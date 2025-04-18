@@ -18,7 +18,7 @@ const HotProduct = ()=>{
       };
       const value = useGetAllProduct()
       return (
-        <div className="my-20">
+        <div id="hot" className="my-20">
             <h2 className=" text-center text-3xl my-10">Hot Product</h2>
           <Slider {...settings}>
             {
