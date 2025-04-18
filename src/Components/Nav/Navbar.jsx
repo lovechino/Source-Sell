@@ -1,12 +1,14 @@
 import { HiBars3BottomRight } from "react-icons/hi2"
 import { navLinks } from "./Items"
-import { useEffect, useState } from "react"
+import { lazy, useEffect, useState } from "react"
 import { FaShoppingCart } from "react-icons/fa";
-import Dialog from "../Dialog/Dialog";
-import AuthForm from "../Auth";
+
+
 import { Link } from "react-router-dom";
-const Navbar = ({openNav})=>{
-    const[navBg,setNavBg] = useState(false)
+ const Navbar = ({openNav})=>{
+  const Dialog = lazy(()=>import("../Dialog/Dialog"))
+  const AuthForm = lazy(()=>import("../Auth"))
+  const[navBg,setNavBg] = useState(false)
   useEffect(()=>{
     const handler = ()=>{
       if(window.scrollY >=90) setNavBg(true)

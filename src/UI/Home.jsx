@@ -1,12 +1,16 @@
 
+import { lazy } from "react"
 import AuthForm from "../Components/Auth"
 import Footer from "../Components/Footer/Footer"
-import ResponsiveNav from "../Components/Nav/ResponsiveNav"
-import HotProduct from "../Components/Products/HotProduct"
-import ListProduct from "../Components/Products/ListProduct"
-import CarouselComponent from "../Components/Slide"
-import ProductDetail from "./Details"
 
+
+
+
+
+const  ResponsiveNav = lazy(() => import("../Components/Nav/ResponsiveNav"))
+const HotProduct = lazy(()=>import("../Components/Products/HotProduct"))
+const ListProduct = lazy(()=>import("../Components/Products/ListProduct"))
+const CarouselComponent = lazy(()=>import("../Components/Slide"))
 const Home = ()=>{
     return(
         <div className=" overflow-hidden">

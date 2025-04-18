@@ -1,12 +1,10 @@
-
-
-
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./UI/Home"
-import ProductDetail from "./UI/Details";
-import Cart from "./UI/Cart";
 
+import { lazy } from "react";
+
+const Home = lazy(() => import("./UI/Home"));
+const ProductDetail = lazy(()=>import("./UI/Details"))
+const Cart = lazy(()=>import("./UI/Cart"))
 
 const browerRouter = createBrowserRouter([
   {
